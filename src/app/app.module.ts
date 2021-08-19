@@ -14,6 +14,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { DropdownDirective } from './shared/practice/dropdown.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NewDropdownMenuDirective } from './sharred/directive/new-dropdown-menu.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { NewDropdownMenuDirective } from './sharred/directive/new-dropdown-menu.
     FormsModule,
     NgbModule,
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
